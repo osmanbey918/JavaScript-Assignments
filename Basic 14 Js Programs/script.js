@@ -47,6 +47,7 @@ else {
 
 //3. A js program to check whether a number is negative, positive or zero
 
+/*
 let number = prompt('Enter a number to check whether it is positive , negative or zero');
 
 if (number > 0) {
@@ -58,6 +59,19 @@ else if (number < 0) {
   else {
     alert('it is a zero')  
 }
+*/
+
+//4. A js program to check whether a number is divisible by 5 and 11 or not
+
+let number = prompt('Enter a number to check whether it is divisible by 5 and 11 or not');
+
+if (number % 5 == 0 && number % 11 == 0) {
+    alert('it is a positive number')
+}
+  else {
+    alert('it is a zero')  
+}
+
 
 
 
