@@ -62,17 +62,32 @@ else if (number < 0) {
 */
 
 //4. A js program to check whether a number is divisible by 5 and 11 or not
+/*
 
 let number = prompt('Enter a number to check whether it is divisible by 5 and 11 or not');
 
 if (number % 5 == 0 && number % 11 == 0) {
-    alert('it is a positive number')
+    alert('Yes! it is divisible by 5 and 11.')
 }
   else {
-    alert('it is a zero')  
+    alert("No! it can't be divisible by 5 and 11.")  
 }
 
+*/
 
+//5. A js program to check whether a number is even or odd.
+
+let number = prompt('Enter a number to check whether it is even or odd');
+
+if (number % 2 == 0) {
+    alert('it is a even number')
+}
+else if (number < 0) {
+    alert('it is a  negative number')
+ }
+  else {
+    alert('it is a odd number')  
+}
 
 
 
