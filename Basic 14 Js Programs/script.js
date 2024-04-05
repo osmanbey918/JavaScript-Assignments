@@ -14,20 +14,16 @@ if (number1 > number2) {
 */ 
 
 
-/*
-Write a js program to find the maximum between three numbers
 
-*/
+//2. A js program to find the maximum between three numbers
+
+/*
 let number1 = prompt("enter first number");
 let number2 = prompt("enter second number");
 let number3 = prompt("enter third number");
 
 if (number1 > number2 && number1 > number3) {
     alert(`${number1} is maximum`)
-}
-
-if (number1 > number2 && number1 > number3) {
-    alert(`${number1} is maximum`)  
 }
 
 else if (number2 > number1 && number2 > number3) {
@@ -46,3 +42,24 @@ else if (number1 == number2 && number1 == number3) {
 else {
     alert(`This is not a number`)
 }   
+
+*/
+
+//3. A js program to check whether a number is negative, positive or zero
+
+let number = prompt('Enter a number to check whether it is positive , negative or zero');
+
+if (number > 0) {
+    alert('it is a positive number')
+}
+else if (number < 0) {
+    alert('it is a  negative number')
+ }
+  else {
+    alert('it is a zero')  
+}
+
+
+
+
+
