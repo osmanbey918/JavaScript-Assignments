@@ -1,51 +1,51 @@
 //1. A js program to find the maximum between two numbers.
 
 /*
-let number1 = prompt("enter number1");
-let number2 = prompt("enter number2");
-if (number1 > number2) {
-    alert(`${number1} is max`)
+let num1 = prompt("enter num1");
+let num2 = prompt("enter num2");
+if (num1 > num2) {
+    alert(`${num1} is max`)
     
-} else if (number1 == number2) {
+} else if (num1 == num2) {
     alert(`both are equal`)
 } else {
-    alert(`${number2} is max`)
+    alert(`${num2} is max`)
 }  
 */ 
 
 
 
-//2. A js program to find the maximum between three numbers
+//2. A js program to find the maximum between three nums
 
 /*
-let number1 = prompt("enter first number");
-let number2 = prompt("enter second number");
-let number3 = prompt("enter third number");
+let num1 = prompt("enter first num");
+let num2 = prompt("enter second num");
+let num3 = prompt("enter third num");
 
-if (number1 > number2 && number1 > number3) {
-    alert(`${number1} is maximum`)
+if (num1 > num2 && num1 > num3) {
+    alert(`${num1} is maximum`)
 }
 
-else if (number2 > number1 && number2 > number3) {
-    alert(`${number2} is maximum`)   
+else if (num2 > num1 && num2 > num3) {
+    alert(`${num2} is maximum`)   
 }
 
 
-else if (number3 > number1 && number3 > number2) {
-    alert(`${number3} is maximum`)   
+else if (num3 > num1 && num3 > num2) {
+    alert(`${num3} is maximum`)   
 }
 
-else if (number1 == number2 && number1 == number3) {
+else if (num1 == num2 && num1 == num3) {
     alert(`All are equal`)
 } 
 
 else {
-    alert(`This is not a number`)
+    alert(`This is not a num`)
 }   
 
 */
 
-//3. A js program to check whether a number is negative, positive or zero
+//3. A js program to check whether a num is negative, positive or zero
 
 /*
 let number = prompt('Enter a number to check whether it is positive , negative or zero');
@@ -72,8 +72,8 @@ if (number % 5 == 0 && number % 11 == 0) {
   else {
     alert("No! it can't be divisible by 5 and 11.")  
 }
-
 */
+
 
 //5. A js program to check whether a number is even or odd.
 /*
@@ -263,9 +263,7 @@ An additional surcharge of 20% is added to the bill
 */
 /*
 const units = parseInt(prompt("Enter the number of electricity units consumed:"));
-
 let totalBill;
-
     if (units <= 50) {
         totalBill = units * 0.5;
     } else if (units <= 150) {
@@ -275,14 +273,10 @@ let totalBill;
     } else {
         totalBill = ((units) * 1.50);
     }
-
-    // Add surcharge
     totalBill = totalBill + totalBill*0.2;
 
-    console.log("Total electricity bill:", totalBill);
-
+    console.log("Total bill:", totalBill);
 */
-
 
 
 
