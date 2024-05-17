@@ -272,16 +272,14 @@ function isValidPalindromePermutation(str) {
             oddCount++;
         }
     }
-
     return oddCount <= 1;
 }
 
 console.log(isValidPalindromePermutation("taco cat")); // true
 console.log(isValidPalindromePermutation("A man a plan a canal Panama")); // true
-console.log(isValidPalindromePermutation("not a palindrome")); // false
 */
 //  r)   Check if a string is an anagram of another string.
-/*
+
 function isAnagram(str1, str2) {
     const cleanString = (str) => str.replace(/\s/g, '').toLowerCase();
 

@@ -2,7 +2,7 @@
 let numb;
     document.getElementById("sub").onclick = function() {
        
-        numb = Math.floor(Math.random() * 100);
+        numb = Math.floor(Math.random() * 10);
      i = 0;
      document.getElementById("att").innerHTML =i;
      document.getElementById("label").innerHTML = "( '  ~  ' )";
