@@ -1,0 +1,32 @@
+* {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    min-height: 100vh;
+
+}
+.calculator {
+    width:300px;
+    border : 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.calculator button {
+    height: 70px;
+    width: 70px;
+    background-color: red;
+}
+.calculator .display {
+    margin-bottom: 20px;
+    width: inherit;
+    height: 100px;
+    background-color: yellow;
+}
