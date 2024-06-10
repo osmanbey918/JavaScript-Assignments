@@ -3,8 +3,27 @@ function getNvalue(button) {
     let value = parseInt(button.value);
     display += value
     console.log(display)
+   document.getElementById('display').innerHTML = display;
 }
+function op(op) {
+    
+    display += op.value
+console.log(display)
+document.getElementById('display').innerHTML = display
+}
+
+function clr(clr) {
+    display = ''
+document.getElementById('display').innerHTML = '0'
+
+}
+
+
 function getans() {
-    let res = display
-    console.log(res)
+        eval(display);
+       let dis = eval(display)
+     console.log(dis)
+document.getElementById('display').innerHTML = dis
+     
+
 }
