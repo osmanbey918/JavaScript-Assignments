@@ -4,7 +4,7 @@
     --calculator-bg: rgba(255, 255, 255, 0.1);
     --box-shadow-color: rgba(0, 0, 0, 0.5);
     --display-bg: #2C3E50;
-    --display-color: #fff;
+    --display-color: #ffffff;
     --button-bg: #87CEEB;
     --button-hover-bg: #76b0da;
     --button-active-scale: 0.95;
@@ -87,4 +87,9 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+}
+.c-e {
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+    background: linear-gradient(230deg, rgb(0, 255, 221), rgb(89, 228, 244), rgb(12, 121, 160));
 }

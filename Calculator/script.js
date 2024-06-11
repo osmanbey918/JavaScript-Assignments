@@ -27,6 +27,4 @@ function getans() {
     let dis = eval(display)
     console.log(dis)
     document.getElementById('display').innerHTML = dis
-
-
 }
