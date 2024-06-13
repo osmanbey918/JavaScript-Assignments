@@ -1,15 +1,4 @@
-function appendToDisplay(value) {
-    document.getElementById('display').textContent += value;
-}
-
-function clearDisplay() {
-    document.getElementById('display').textContent = '';
-}
-
-function backspace() {
-    let display = document.getElementById('display');
-    display.textContent = display.textContent.slice(0, -1);
-}
+// calculate function
 
 function calculate() {
     let display = document.getElementById('display');
@@ -20,16 +9,36 @@ function calculate() {
     }
 }
 
-function toggleScientific() {
-    const scientificButtons = document.getElementById('scc');
-    scientificButtons.classList.toggle('hidden');
-}
-
+/* geting values from all the buttons */
 function getNvalue(value) {
     let display = document.getElementById('display');
-    display.textContent += value;
+    if (display.textContent === '0') {
+        display.textContent = value;
+    } else {
+        display.textContent += value;
+    }
 }
 
-function sc() {
-    document.getElementById('scc').style.display = 'block';
+
+/*  scientific buttons on/off function*/
+function scientifiBtn() {
+    let btn = document.getElementById('scc');
+    if (btn.style.display === 'none' || btn.style.display === '') {
+        btn.style.display = 'flex';
+        btn.classList.toggle('show');
+
+    } else {
+        btn.style.display = 'none';
+    }
+}
+
+//                 clearing display
+function clearDisplay() {
+    document.getElementById('display').textContent = '0';
+}
+
+// button functiion for backspace
+function backspace() {
+    let display = document.getElementById('display');
+    display.textContent = display.textContent.slice(0, -1);
 }

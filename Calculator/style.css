@@ -16,13 +16,14 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-    background: linear-gradient(150deg, rgb(20, 23, 29), rgb(3, 11, 17)); /* Adjust transparency as needed */
-    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 4px 4px 16px rgb(32, 32, 32), -5px 5px 16px rgb(39, 39, 39); /* Box shadow */
+    background: linear-gradient(150deg, rgb(20, 23, 29), rgb(3, 11, 17));
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 4px 4px 16px rgb(32, 32, 32), -5px 5px 16px rgb(39, 39, 39);
     box-shadow: 2px 2px 10px lightseagreen;
-   color: lightseagreen;
-border: 1px solid lightseagreen;
+    color: lightseagreen;
+    border: 1px solid lightseagreen;
+
 }
 
 
@@ -35,9 +36,8 @@ border: 1px solid lightseagreen;
     text-align: right;
     padding: 20px;
     box-sizing: border-box;
-    background-color: var(--display-bg);
-    color: var(--display-color);
-    border: 1px solid lightseagreen;
+    color: white;
+    border: 0px solid lightseagreen;
     border-radius: 8px;
 
     box-shadow: 4px 4px 10px rgb(53, 73, 79) inset;
@@ -45,7 +45,7 @@ border: 1px solid lightseagreen;
 
 .buttons {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -56,14 +56,13 @@ border: 1px solid lightseagreen;
     font-size: 28px;
     cursor: pointer;
     background-color: rgb(19, 17, 17);
-    color: var(--button-color);
-    border: 1px solid lightseagreen;
+    color: white;
     border-radius: 50%;
     transition: background-color 0.3s ease, transform 0.1s ease;
-    height: 60px;
-    width: 60px;
-    /*box-shadow:  5px 5px 5px lightseagreen, -5px -5px 5px lightseagreen;*/
- /*   box-shadow: 2px 2px 10px lightseagreen;*/
+    height: 55px;
+    width: 55px;
+    border: none;
+    box-shadow: 2px 2px 10px lightseagreen;
 }
 
 .button:hover {
@@ -72,7 +71,7 @@ border: 1px solid lightseagreen;
 }
 
 .operator {
-    background-color: #ff6c00;
+    background-color: #40e0d0df;
 }
 
 
@@ -81,11 +80,33 @@ border: 1px solid lightseagreen;
 /* Existing styles for .calculator, .display, .buttons, .button classes remain unchanged */
 
 .scientific-buttons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 10px;
+
 }
 
-.hidden {
+.scientific-buttons button {
+    color: aliceblue;
+    padding: 0px;
+}
+
+/*.hidden {
     display: none;
+}*/
+.clear {
+    background-color: red;
+    border: none;
+    box-shadow: none;
+}
+.eq {
+    background-color: #FFA500;
+border: none;
+box-shadow: none;
+}
+.eq:hover {
+    background-color: #FF8C00;
+    border: none;
+box-shadow: none;
 }

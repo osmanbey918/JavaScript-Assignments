@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scientific Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="calculator">
-        <p class="display" id="display">0</p>
-        <p>Scientific calculator</p>
-        <button type="button" id="sc" onclick="sc()">s</button>
-        <div class="buttons">
-            <!-- Basic calculator buttons -->
-            <button class="button" onclick="appendToDisplay('7')">7</button>
-            <button class="button" onclick="appendToDisplay('8')">8</button>
-            <button class="button" onclick="appendToDisplay('9')">9</button>
-            <button class="button operator" onclick="appendToDisplay('/')">/</button>
-            <button class="button" onclick="appendToDisplay('4')">4</button>
-            <button class="button" onclick="appendToDisplay('5')">5</button>
-            <button class="button" onclick="appendToDisplay('6')">6</button>
-            <button class="button operator" onclick="appendToDisplay('*')">*</button>
-            <button class="button" onclick="appendToDisplay('1')">1</button>
-            <button class="button" onclick="appendToDisplay('2')">2</button>
-            <button class="button" onclick="appendToDisplay('3')">3</button>
-            <button class="button operator" onclick="appendToDisplay('-')">-</button>
-            <button class="button" onclick="appendToDisplay('0')">0</button>
-            <button class="button" onclick="appendToDisplay('.')">.</button>
-            <button class="button operator" onclick="calculate()">=</button>
-            <button class="button operator" onclick="appendToDisplay('+')">+</button>
-            <button class="button" onclick="clearDisplay()">C</button>
-            <button class="button" onclick="backspace()">←</button>
-            <!-- Toggle button for scientific functions -->
-            <button class="button toggle-btn" onclick="toggleScientific()">Scientific</button>
-        </div>
-        <!-- Scientific calculator functions initially hidden -->
-        <div class="scientific-buttons hidden" id="scc">
-            <button class="button" onclick="getNvalue('Math.sin(')">sin</button>
-            <button class="button" onclick="getNvalue('Math.cos(')">cos</button>
-            <button class="button" onclick="getNvalue('Math.tan(')">tan</button>
-            <button class="button" onclick="getNvalue('Math.log10(')">log</button>
-            <button class="button" onclick="getNvalue('Math.sqrt(')">√</button>
-            <button class="button" onclick="getNvalue('Math.pow(')">^</button>
-            <!-- Additional scientific functions -->
-            <button class="button" onclick="getNvalue('Math.abs(')">abs</button>
-            <button class="button" onclick="getNvalue('Math.ceil(')">ceil</button>
-            <button class="button" onclick="getNvalue('Math.floor(')">floor</button>
-            <button class="button" onclick="getNvalue('Math.round(')">round</button>
-            <button class="button" onclick="getNvalue('Math.PI')">π</button>
-            <button class="button" onclick="getNvalue('Math.E')">e</button>
-        </div>
+  <div class="calculator">
+    <p class="display" id="display">0</p>
+    <p>Scientific calculator</p>
+    <button type="button" id="sc" onclick="scientifiBtn()">s</button>
+    <div class="scientific-buttons hidden" id="scc">
+      <button class="button" onclick="getNvalue('Math.sin(')">sin</button>
+      <button class="button" onclick="getNvalue('Math.cos(')">cos</button>
+      <button class="button" onclick="getNvalue('Math.tan(')">tan</button>
+      <button class="button" onclick="getNvalue('Math.log10(')">log</button>
+      <button class="button" onclick="getNvalue('Math.sqrt(')">√</button>
+      <button class="button" onclick="getNvalue('Math.pow(')">^</button>
+      <button class="button" onclick="getNvalue('Math.abs(')">abs</button>
+      <button class="button" onclick="getNvalue('Math.ceil(')">ceil</button>
+      <button class="button" onclick="getNvalue('Math.floor(')">F</button>
+      <button class="button" onclick="getNvalue('Math.round(')">R</button>
+      <button class="button" onclick="getNvalue('Math.PI')">π</button>
+      <button class="button" onclick="getNvalue('Math.E')">e</button>
+    </div><br>
+    <div class="buttons">
+      <!-- Basic calculator buttons -->
+      <button class="button clear" onclick="clearDisplay()">C</button>
+      <button class="button" onclick="getNvalue('7')">7</button>
+      <button class="button" onclick="getNvalue('8')">8</button>
+      <button class="button" onclick="getNvalue('9')">9</button>
+      <button class="button operator" onclick="getNvalue('/')">/</button>
+      <button class="button" onclick="getNvalue('4')">4</button>
+      <button class="button" onclick="getNvalue('5')">5</button>
+      <button class="button" onclick="getNvalue('6')">6</button>
+      <button class="button operator" onclick="getNvalue('*')">*</button>
+      <button class="button" onclick="getNvalue('1')">1</button>
+      <button class="button" onclick="getNvalue('2')">2</button>
+      <button class="button" onclick="getNvalue('3')">3</button>
+      <button class="button operator" onclick="getNvalue('-')">-</button>
+      <button class="button" onclick="getNvalue('.')">.</button>
+      <button class="button" onclick="getNvalue('0')">0</button>
+      <button class="button" onclick="backspace()">←</button>
+      <button class="button operator" onclick="getNvalue('+')">+</button>
+      <button class="button eq" onclick="calculate()">=</button>
+      <button class="button" onclick="getNvalue('(')">(</button>
+      <button class="button" onclick="getNvalue(')')">)</button>
+      <!-- Toggle button for scientific functions -->
     </div>
 
-    <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
