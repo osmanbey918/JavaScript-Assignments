@@ -2,6 +2,7 @@
 
 function calculate() {
     let display = document.getElementById('display');
+    
     try {
         display.textContent = eval(display.textContent);
     } catch (error) {
@@ -9,23 +10,28 @@ function calculate() {
     }
 }
 
-/* geting values from all the buttons */
+// geting values from all the buttons 
 function getNvalue(value) {
     let display = document.getElementById('display');
-    if (display.textContent === '0') {
+    let lastChar = display.textContent.slice(-1); 
+    if(display.textContent == '0'){
         display.textContent = value;
-    } else {
-        display.textContent += value;
+        return;
     }
+    if (lastChar === '+' || lastChar === '-' || lastChar === '*' || lastChar === '/') {
+        if (value === '+' || value === '-' || value === '*' || value === '/') {
+            return;
+        }
+    }
+    display.textContent += value;
 }
 
 
-/*  scientific buttons on/off function*/
+//  scientific buttons on/off function
 function scientifiBtn() {
     let btn = document.getElementById('scc');
     if (btn.style.display === 'none' || btn.style.display === '') {
         btn.style.display = 'flex';
-        btn.classList.toggle('show');
 
     } else {
         btn.style.display = 'none';
@@ -42,3 +48,4 @@ function backspace() {
     let display = document.getElementById('display');
     display.textContent = display.textContent.slice(0, -1);
 }
+    

@@ -35,11 +35,12 @@ body {
     margin-top: 20px;
     text-align: right;
     padding: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
     color: white;
     border: 0px solid lightseagreen;
     border-radius: 8px;
-
+    overflow: hidden;
     box-shadow: 4px 4px 10px rgb(53, 73, 79) inset;
 }
 
@@ -49,64 +50,81 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
-
 .button {
+    transition: 0.5s ease;
     padding: 15px;
     font-size: 28px;
     cursor: pointer;
     background-color: rgb(19, 17, 17);
     color: white;
     border-radius: 50%;
-    transition: background-color 0.3s ease, transform 0.1s ease;
     height: 55px;
     width: 55px;
     border: none;
     box-shadow: 2px 2px 10px lightseagreen;
-}
 
-.button:hover {
-    background-color: rgb(36, 36, 36);
-    box-shadow: 1px 1px 10px lightseagreen inset;
+    }
+    
+    .button:hover {
+
+    box-shadow: 1px 1px 5px lightseagreen inset;
 }
 
 .operator {
-    background-color: #40e0d0df;
+    color: #40e0d0df;
 }
-
-
-
-
-/* Existing styles for .calculator, .display, .buttons, .button classes remain unchanged */
 
 .scientific-buttons {
     display: none;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 10px;
-
 }
 
 .scientific-buttons button {
-    color: aliceblue;
+    color: lightseagreen;
     padding: 0px;
 }
 
-/*.hidden {
-    display: none;
-}*/
 .clear {
-    background-color: red;
+    background-color: rgb(85, 85, 85);
     border: none;
     box-shadow: none;
 }
-.eq {
-    background-color: #FFA500;
-border: none;
-box-shadow: none;
+.clear:hover {
+    background-color: rgb(19, 17, 17);
+    box-shadow: 1px 1px 5px lightseagreen inset;
 }
-.eq:hover {
-    background-color: #FF8C00;
+
+.eq {
     border: none;
-box-shadow: none;
+    box-shadow: none;
+    box-shadow: 1px 1px 50px lightseagreen inset;
+    transition: 0.5s;
+}
+
+.eq:hover {
+    border: none;
+    box-shadow: none;
+    box-shadow: 1px 1px 5px lightseagreen inset;
+}
+
+#sc {
+    height: 40px;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 50px lightseagreen inset;
+
+}
+
+#sc:hover {
+    transition: 0.3s ease;
+    background-color: rgb(19, 17, 17);
+    box-shadow: none;
+    border: 1px solid lightseagreen;
 }
